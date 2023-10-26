@@ -27,10 +27,7 @@ public static class ConsulExtensions
     /// <remarks>consul集群建议：server端3或者5个，client端根据程序副本数量配置即可，即每个副本服务器连接一个client</remarks>
     /// <example>
     ///     <code>
-    ///         public void ConfigureServices(IServiceCollection services)
-    ///         {
-    ///             services.AddConsul(ConsulConfig);
-    ///         }
+    ///         builder.Services.AddConsul(builder.Configuration);
     ///     </code>
     /// </example>
     public static IServiceCollection AddConsul(
@@ -67,10 +64,7 @@ public static class ConsulExtensions
     /// <returns></returns>
     /// <remarks>
     ///     <code>
-    ///         public void Configure(IApplicationBuilder app,IWebHostEnvironment env,IHostApplicationLifetime lifetime,IOptions&lt;ConsulServiceOptions&gt; options)
-    ///         {
-    ///             app.UseConsul(lifeTime,options.Value);
-    ///         }
+    ///         app.UseConsul(app.Lifetime);
     ///     </code>
     /// </remarks>
     public static IApplicationBuilder UseConsul(
