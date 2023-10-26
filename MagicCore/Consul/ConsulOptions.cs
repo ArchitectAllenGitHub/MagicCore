@@ -25,7 +25,7 @@ public class ConsulOptions
     /// <summary>
     /// 健康检查地址
     /// </summary>
-    public string HealthCheck { get; set; }
+    public string HealthCheck { get; set; } = "/HealthCheck";
 
     /// <summary>
     /// 服务地址

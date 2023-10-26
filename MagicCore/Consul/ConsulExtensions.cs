@@ -48,9 +48,7 @@ public static class ConsulExtensions
             {
                 var options = p.GetRequiredService<IOptions<ConsulOptions>>().Value;
                 config.Address = new Uri(options.ConsulAddress);
-
-                if (!options.ConsulToken.IsNullOrEmpty())
-                    config.Token = options.ConsulToken;
+                config.Token = options.ConsulToken;
             }));
 
         @this.AddGeneratorId();
@@ -66,7 +64,6 @@ public static class ConsulExtensions
     /// </summary>
     /// <param name="this"></param>
     /// <param name="lifetime"></param>
-    /// <param name="options"></param>
     /// <returns></returns>
     /// <remarks>
     ///     <code>
@@ -78,9 +75,9 @@ public static class ConsulExtensions
     /// </remarks>
     public static IApplicationBuilder UseConsul(
         this IApplicationBuilder @this,
-        IHostApplicationLifetime lifetime,
-        ConsulOptions options)
+        IHostApplicationLifetime lifetime)
     {
+        var options = @this.ApplicationServices.GetRequiredService<IOptions<ConsulOptions>>().Value;
         @this.UseHealthChecks(options.HealthCheck);
 
         //Consul客户端
