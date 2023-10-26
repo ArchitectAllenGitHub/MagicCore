@@ -32,12 +32,10 @@ public static class ConsulExtensions
     /// </example>
     public static IServiceCollection AddConsul(
         this IServiceCollection @this,
-        IConfiguration configuration,
-        bool useHealthCheck = true)
+        IConfiguration configuration)
     {
-        //注入健康检查
-        if (useHealthCheck)
-            @this.AddHealthChecks();
+        //注册健康检查
+        @this.AddHealthChecks();
 
         @this.Configure<ConsulOptions>(configuration.GetSection("Consul"));
         @this.AddSingleton<IConsulClient>(p =>
