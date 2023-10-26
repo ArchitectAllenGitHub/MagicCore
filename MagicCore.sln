@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCore", "MagicCore\MagicCore.csproj", "{233A1645-91BC-4B0D-AE59-3DD1F35AEF25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCore.API", "MagicCore.API\MagicCore.API.csproj", "{5050A095-F263-433E-A612-E6CDD16A103A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{233A1645-91BC-4B0D-AE59-3DD1F35AEF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{233A1645-91BC-4B0D-AE59-3DD1F35AEF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{233A1645-91BC-4B0D-AE59-3DD1F35AEF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5050A095-F263-433E-A612-E6CDD16A103A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5050A095-F263-433E-A612-E6CDD16A103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5050A095-F263-433E-A612-E6CDD16A103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5050A095-F263-433E-A612-E6CDD16A103A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
