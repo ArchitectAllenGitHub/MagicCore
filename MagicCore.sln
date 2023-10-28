@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCore", "MagicCore\Magi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCore.API", "MagicCore.API\MagicCore.API.csproj", "{364CC312-71E2-4353-A9C8-C1402AD9EB38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCore.Gateway", "MagicCore.Gateway\MagicCore.Gateway.csproj", "{B4450F33-B63F-4113-8099-2CC5A23E857A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{364CC312-71E2-4353-A9C8-C1402AD9EB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{364CC312-71E2-4353-A9C8-C1402AD9EB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{364CC312-71E2-4353-A9C8-C1402AD9EB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4450F33-B63F-4113-8099-2CC5A23E857A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4450F33-B63F-4113-8099-2CC5A23E857A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4450F33-B63F-4113-8099-2CC5A23E857A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4450F33-B63F-4113-8099-2CC5A23E857A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
